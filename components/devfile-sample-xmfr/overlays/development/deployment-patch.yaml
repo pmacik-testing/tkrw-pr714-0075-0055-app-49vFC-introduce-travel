@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xmfr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0055-tenant/tkrw-pr714-0075-0055-app/devfile-sample-xmfr@sha256:94e56ee0876917d8b4e201f0b24131a966b8fdf98d9c8dc82bcbe43b3935cc1d
+        name: my-nodejs
+        resources: {}
+status: {}
